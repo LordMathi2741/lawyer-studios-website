@@ -2,6 +2,7 @@
 "use client";
 import React, {useState} from 'react';
 import Image from "next/image";
+import Logo from "../../../assets/logo.png";
 import { FaPhoneAlt} from "react-icons/fa";
 import {RxHamburgerMenu} from "react-icons/rx";
 import {IoMdCloseCircleOutline} from "react-icons/io";
@@ -12,11 +13,11 @@ export default function NavBarContent(){
     }
     return (
         <nav className="navbar-container flex justify-between lg:justify-evenly p-4 md:p-6 lg:p-10 bg-black text-white text-xs md:text-md lg:text-lg" aria-label="Nvbar content section">
-            <div>
-              <Image src="/assets/logo-final-transparente2.jpg" alt="Brand logo" width={100} height={30}/>
+            <div >
+              <Image src={Logo} alt="Brand logo" className=" w-20 lg:w-44"/>
             </div>
-            <div className=" flex flex-col">
-                <RxHamburgerMenu onClick={setToggleToolbar} className={`${!toolbar ? 'block' :'hidden' } hover:text-yellow-600 hover:cursor-pointer text-xl lg:hidden`}/>
+            <div className=" flex flex-col lg:mt-10">
+                <RxHamburgerMenu onClick={setToggleToolbar} className={`${!toolbar ? 'block' :'hidden' } hover:text-yellow-600 hover:cursor-pointer text-xl lg:hidden mt-10 mr-4`}/>
                 <ul className={`${toolbar ? 'flex':'hidden'}   text-center lg:flex flex-col lg:flex-row gap-2 lg:gap-5`}>
                     <li className="hover:bg-yellow-600 hover:cursor-pointer lg:p-3 xl:p-5 "> Inicio </li>
                     <li className="hover:bg-yellow-600 hover:cursor-pointer lg:p-3 xl:p-5"> Nosotros </li>
