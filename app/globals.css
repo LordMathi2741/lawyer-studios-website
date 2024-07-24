@@ -9,7 +9,11 @@
 }
 
 .home-screen-container{
-    background-image: url("https://www.tuproyectodevida.pe/wp-content/uploads/2021/01/funcion-abogado-1200x628.jpg");
+    background-image: linear-gradient(
+            to top right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url("https://www.tuproyectodevida.pe/wp-content/uploads/2021/01/funcion-abogado-1200x628.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,9 +24,34 @@
     letter-spacing: 10px;
 }
 
+.about-container {
+    width: 900px;
+}
+
+.contact-container {
+    padding: 200px;
+}
+.qr-image {
+    width: 400px;
+    height: 600px;
+}
+
 @media(width<=1023px){
     .home-screen-container {
         padding: 300px;
+    }
+
+    .about-container{
+        width: 600px;
+    }
+
+    .contact-container {
+        padding: 100px;
+    }
+
+    .qr-image {
+        width: 300px;
+        height: 500px;
     }
 
 }
@@ -30,6 +59,18 @@
 @media(width<=725px) {
     .home-screen-container {
         padding: 200px;
+    }
+    .about-container{
+        width: 400px;
+    }
+
+    .contact-container {
+        padding: 50px;
+    }
+
+    .qr-image {
+        width: 200px;
+        height: 400px;
     }
 }
 
@@ -42,6 +83,18 @@
         letter-spacing: 0;
         margin-top: 80px;
     }
+    .about-container{
+        width: 200px;
+    }
+
+    .contact-container {
+        padding: 50px;
+    }
+
+    .qr-image {
+        width: 100px;
+        height: 300px;
+    }
 }
 
 @media(width<=320px) {
@@ -51,6 +104,15 @@
     .home-custom-title{
         letter-spacing: 0;
         margin-top: 100px;
+    }
+
+    .qr-image {
+        width: 100px;
+        height: 200px;
+    }
+
+    .contact-container {
+        padding: 50px;
     }
 }
 
