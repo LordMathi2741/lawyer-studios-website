@@ -12,7 +12,7 @@ export default function NavBarContent(){
         setToolbar(!toolbar);
     }
     return (
-        <nav className="navbar-container flex justify-between lg:justify-evenly p-4 md:p-6 lg:p-10 bg-black text-white text-xs md:text-md lg:text-lg" aria-label="Nvbar content section">
+        <nav className="navbar-container flex justify-between lg:justify-evenly p-4  bg-black text-white text-xs md:text-md lg:text-lg" aria-label="Nvbar content section">
             <div >
               <Image src={Logo} alt="Brand logo" className=" w-20 lg:w-44"/>
             </div>
@@ -25,8 +25,8 @@ export default function NavBarContent(){
                     <li className="hover:bg-yellow-600 hover:cursor-pointer lg:p-3 xl:p-5"> Servicios</li>
                     <li className="hover:bg-yellow-600 hover:cursor-pointer lg:p-3 xl:p-5"> Otros </li>
                     <li className="hover:bg-yellow-600 hover:cursor-pointer lg:p-3 xl:p-5"> Contacto</li>
-                    <li className=" md:p-2 lg:p-3 xl:p-5 text-yellow-600 flex gap-2">
-                        <FaPhoneAlt className="lg:mt-1" />
+                    <li className=" md:p-2 lg:p-3 xl:p-5 text-yellow-600 flex items-center  gap-2">
+                        <FaPhoneAlt />
                         <p className="lg:text-sm xl:text-xl"> +51 974 660 869</p>
                     </li>
                     <li className="mx-auto">
