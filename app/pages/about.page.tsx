@@ -4,7 +4,7 @@ export default function AboutPage(){
         <div className="mt-10 grid place-content-center gap-2">
             <h1 className="text-md md:text-lg lg:text-2xl font-bold"> Sobre Nosotros</h1>
             <div className="flex flex-col gap-3">
-                <h2 className="text-md md:text-lg lg:text-2xl"> Soluciones Juridicas Integrales </h2>
+                <h2 className="text-xs md:text-lg lg:text-2xl"> Soluciones Juridicas Integrales </h2>
                 <div className=" about-container flex flex-col lg:flex-row gap-10 lg:gap-20 text-justify text-xs md:text-md lg:text-lg text-gray-600">
                     <h3> Somos una organización con 19 años de experiencia en el mercado proveyendo asesoría legal para la solución de conflictos en el sistema judicial y arbitral, a fin de maximizar valor para nuestros clientes.
                         Nuestro equipo se compone por abogados sénior y junior, de reconocida reputación profesional y elevada formación académica en universidades de Europa y América Latina, con amplia experiencia en el sector público y privado, acompañados por colaboradores con alto desempeño académico y sólida formación personal. Capacidades que nos otorgan una ventaja competitiva puesta al servicio de nuestros clientes nacionales y extranjeros.
