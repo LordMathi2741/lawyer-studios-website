@@ -1,7 +1,9 @@
 import NavBarContent from "@/app/public/components/navbar-content.component";
 import HomeScreen from "@/app/public/pages/home-screen.page";
-import AboutPage from "@/app/pages/about.page";
-import ContactPage from "@/app/pages/contact.page";
+import AboutComponent from "@/app/components/about.component";
+import ContactComponent from "@/app/components/contact.component";
+import OurTeamComponent from "@/app/components/our-team.component";
+import FooterContent from "@/app/public/components/footer-content.component";
 
 
 export default function Home() {
@@ -9,8 +11,11 @@ export default function Home() {
     <div>
       <NavBarContent/>
         <HomeScreen/>
-        <AboutPage/>
-        <ContactPage/>
+        <AboutComponent/>
+        <hr className="bg-gray-500 p-1"/>
+        <OurTeamComponent/>
+        <ContactComponent/>
+        <FooterContent/>
     </div>
   );
 }

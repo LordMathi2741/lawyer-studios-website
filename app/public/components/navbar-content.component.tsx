@@ -1,6 +1,6 @@
 
 "use client";
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 import Logo from "../../../assets/logo.png";
 import { FaPhoneAlt} from "react-icons/fa";
@@ -11,8 +11,23 @@ export default function NavBarContent(){
     function setToggleToolbar(){
         setToolbar(!toolbar);
     }
+    const [header, setHeader] = useState(false);
+
+
+    const changeBackground = () => {
+        setHeader(window.scrollY > 0);
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeBackground);
+
+        return () => {
+            window.removeEventListener('scroll', changeBackground);
+        }
+    }, [])
+
     return (
-        <nav className="navbar-container flex justify-between lg:justify-evenly p-4  bg-black text-white text-xs md:text-md lg:text-lg" aria-label="Nvbar content section">
+        <nav className={`navbar-container flex justify-between lg:justify-evenly p-4  ${header ? 'bg-slate-200 text-black' : 'bg-black text-white'}  text-xs md:text-md lg:text-lg`} aria-label="Nvbar content section">
             <div >
               <Image src={Logo} alt="Brand logo" className=" w-20 lg:w-44"/>
             </div>
